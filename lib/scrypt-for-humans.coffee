@@ -5,9 +5,9 @@ Promise = require "bluebird"
 # Scrypt input/output format configuration
 # FIXME: Figure out how to isolate this, so that there is a guarantee these changes won't affect any other `scrypt` imports outside of the module.
 scrypt.hash.config.keyEncoding = "utf8"
-scrypt.hash.config.outputEncoding = "base64"
+# scrypt.hash.config.outputEncoding = "base64"
 scrypt.verify.config.keyEncoding = "utf8"
-scrypt.verify.config.hashEncoding = "base64"
+# scrypt.verify.config.hashEncoding = "base64"
 
 # Some custom error types, since the `scrypt` library doesn't have proper error handling
 errors.create name: "ScryptError"
